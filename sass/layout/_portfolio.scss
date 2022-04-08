@@ -1,0 +1,109 @@
+.section-examples {
+      background-color: var(--top-line-bg);
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+   .filters-bt {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    }
+    .filters-section{
+      padding-top: 0;
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+    .filters-bt .bt-item + .bt-item {
+      margin-left: 8px;
+    }
+
+  
+  .example-name{
+  color:var(--primary-text-color) ;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  }
+  .direction {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  }
+
+.examples-blok {
+  display: flex;
+  flex-wrap: wrap;
+}
+.box-examples {
+  width: 370px;
+  margin-bottom: 30px;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE; 
+  box-sizing: border-box;
+  position: relative;
+
+  &:hover,
+  &:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 1px 2px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;              
+}
+
+
+&:not(:nth-child(3n)) { 
+   margin-right: 30px; 
+}
+&:nth-last-child(-n+3) {
+  margin-bottom: 0;
+}
+}
+ 
+
+
+.box-text {
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+
+}
+.box-examples:hover .examples-top-text,
+.box-examples:focus .examples-top-text
+{
+  transform: translateY(0) ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+
+ 
+
+
+
+.examples-wrap{
+  position: relative;
+  overflow: hidden;
+}
+.examples-top-text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;  
+  font-weight: 370;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding-top: 63px;
+  padding-right: 24px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
+
+}

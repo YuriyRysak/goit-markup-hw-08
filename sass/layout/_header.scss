@@ -1,0 +1,115 @@
+header {
+    border: 1px solid transparent;
+    border-bottom-color: #ECECEC;
+
+  }
+.line {
+    background-color: var(--top-line-bg);
+  }  
+
+  .navigation{
+  display: flex;
+  align-items: center;
+
+  }
+  .nav-list{
+  display: flex;
+  margin-left: 93px;
+
+  }
+  .nav-list .nav-list__link{
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color:var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-list .nav-list__link:hover,
+  .nav-list .nav-list__link:focus {
+  color:var(--accent-color);
+  }
+  .nav-list .nav-list__link.current {
+  color: var(--accent-color);
+  } 
+  .nav-list .nav-list__item + .nav-list__item {
+  margin-left: 50px;
+  }
+  
+
+   
+  /* contacts selection */
+      .header-contacts {
+      display: flex;
+      margin-left: auto;
+    }
+    .header-contacts__reference {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px; 
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      
+    }
+    .header-contacts .header-contacts__item + .header-contacts__item {
+        margin-left: 50px;
+    }
+    
+    
+  .header-contacts {
+  align-items: center;   
+  }
+    
+  .header-contacts__icon{
+    align-items: center;
+    margin-right: 10px;
+    fill: currentColor;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+    fill: var(--accent-color);
+  }
+  }
+  
+    
+  .header-contacts__reference:hover,
+  .header-contacts__reference:focus,
+  .contacts-list__link:hover,.contacts-list__link:focus,
+  .contacts-list__link--address:hover,
+  .contacts-list__link--address:focus {
+    color: var(--accent-color);
+  }
+/* current */
+ .current{
+   color: var(--accent-color);
+   position: relative;
+
+    &::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    left: 0;
+    bottom: -1px;
+  }    
+ }
+ 

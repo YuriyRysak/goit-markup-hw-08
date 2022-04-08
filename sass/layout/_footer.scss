@@ -1,0 +1,35 @@
+.footer {
+    background-color:var(--footer-bg-color) ;
+  }
+
+  .contacts-list__link {
+    color: var(--address-text-color) ;  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contacts-list__link--address{
+    color:var(--top-line-bg);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-contacts {
+   width: 231px;
+   margin-right: 70px;
+  }
+  .contacts-list__page {
+    margin-bottom: 9px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  

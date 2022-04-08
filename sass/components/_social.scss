@@ -1,0 +1,53 @@
+.footer-container{
+    display: flex;
+  }
+  .social  {
+   width: 206px;
+
+    &-text { 
+      font-family: Roboto;
+      font-weight:700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--top-line-bg);
+      margin-bottom: 20px;
+      padding-top: 14px;
+    }
+  
+  }
+ 
+    .name-social{
+     display: flex;
+     justify-content: center;
+
+     &-link {
+      width: 44px;
+      height: 44px;
+      background-color:rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--top-line-bg) ;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        background-color:var(--accent-color);
+        color: var(--top-line-bg);
+      }
+     }
+     &-icon{
+      fill:currentColor;
+    }
+
+    &-item +&-item {
+      margin-left: 10px;
+    }
+   }
+     
+  
+   

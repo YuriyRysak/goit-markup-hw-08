@@ -28,6 +28,12 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 0;
 }
 
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
 body {
   background-color: var(--body-bg-color);
   color: var(--primary-text-color);
@@ -41,11 +47,28 @@ button {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .cap {
@@ -64,8 +87,15 @@ button {
 }
 
 .personnel {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .personnel {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .cellar {
@@ -259,8 +289,15 @@ header {
 }
 
 .feature {
-  display: flex;
-  flex-wrap: wrap;
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 480px) {
+  .feature {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .feature .list-item {
@@ -340,12 +377,20 @@ header {
 .team {
   color: var(--primary-text-color);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 0.853;
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .label {
@@ -381,10 +426,17 @@ header {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 0.853;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .name {
+    font-size: 16px;
+    line-height: 1.18;
+  }
 }
 
 .name-list {
@@ -399,14 +451,21 @@ header {
   width: 270 px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
 }
 
-.name-list-icon:not(:nth-child(4n)) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .name-list-icon {
+    width: calc(100%/2 - 30px);
+    margin-left: 30px;
+  }
 }
 
-.name-list-icon:nth-last-child(-n+4) {
-  margin-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .name-list-icon {
+    width: calc(100%/4 - 30px);
+    margin-left: 30px;
+  }
 }
 
 .occupation {

@@ -1,12 +1,22 @@
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
+  @media  screen and (min-width: 480px) {
+    width: 480px;    
+  }
+  @media  screen and (min-width: 768px) {
+    width: 768px;    
+  }
+  @media  screen and (min-width: 1200px) {
+    width: 1200px;    
+  }
+
+  // outline: 2px solid tomato;
   }  
 
-  .cap{
+.cap{
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -19,8 +29,13 @@
   padding-bottom: 94px;
 }
 .personnel
-{ padding-top: 94px;
-  padding-bottom: 94px;
+{ padding-top: 60px;
+  padding-bottom: 60px;
+  @media  screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;    
+  }
+  
 }
 .cellar { 
   padding-top: 60px;

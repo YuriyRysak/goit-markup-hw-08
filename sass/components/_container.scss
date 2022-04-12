@@ -10,68 +10,12 @@
     width: 768px;    
   }
   @media  screen and (min-width: 1200px) {
-    width: 1200px;    
+    width: 1200px;
+       
   }
 
   outline: 2px solid tomato;
   }  
 
-.cap{
-  padding-top: 118px;
-  padding-bottom: 118px;
-  @media  screen and (min-width: 1200px) {
-    padding-top: 200px;
-  padding-bottom: 200px;
-  }
-
-  
-}
-.exception{
-  padding-top:60px;
-  padding-bottom: 60x;
-  @media  screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;    
-  }
-}
-.cooperate {
-  padding-top: 0px;
-  padding-bottom: 94px;
-}
-.personnel
-{ padding-top: 60px;
-  padding-bottom: 60px;
-  @media  screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;    
-  }
-  
-}
-.clients{
-    background-color:var(--top-line-bg);
-    padding-top: 60px;
-    padding-bottom: 60px;
-    @media  screen and (min-width: 1200px) {
-      padding-top: 94px;
-      padding-bottom: 94px;
-    }
-}
-
-.cellar { 
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.section-examples {
-  background-color: var(--top-line-bg);
-  padding-top: 60px;
-  padding-bottom: 60px;
-    @include desk {
-      padding-top: 94px;
-      padding-bottom: 94px;
-    }
 
 
-  // padding-top: 94px;
-  // padding-bottom: 94px;
-}

@@ -1,0 +1,64 @@
+.cap{
+    padding-top: 118px;
+    padding-bottom: 118px;
+    @media  screen and (min-width: 1200px) {
+      padding-top: 200px;
+    padding-bottom: 200px;
+    }
+  
+    
+  }
+  .innsays {
+    background-color: var(--top-line-bg);
+    padding-top: 60px;
+    padding-bottom: 60px;
+      @include desk {
+        padding-top: 94px;
+        padding-bottom: 94px;
+      }
+  
+  
+    
+  }
+  .section-cooperate {
+    background-color: var(--top-line-bg);
+    display: none;
+    @include desk {
+      display:block;  
+    padding-top: 0px;
+    padding-bottom: 94px;
+   }
+    
+  }
+  
+  // .cooperate {
+  //   display: none;
+  //   @include desk {
+  //     display:block;  
+  //   padding-top: 0px;
+  //   padding-bottom: 94px;
+  //  }
+  // }
+  .personnel
+  { padding-top: 60px;
+    padding-bottom: 60px;
+    @media  screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;    
+    }
+    
+  }
+  .clients{
+      background-color:var(--top-line-bg);
+      padding-top: 60px;
+      padding-bottom: 60px;
+      @media  screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+      }
+  }
+  
+  .cellar { 
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }

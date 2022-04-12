@@ -1,21 +1,44 @@
-// .section-examples {
-//       background-color: var(--top-line-bg);
-//       padding-top: 94px;
-//       padding-bottom: 94px;
-//     }
+
    .filters-bt {
-    //  display: flex;
-    //  align-items: center;
-     justify-content: center;
-    }
+     display: flex;
+     flex-wrap: wrap;
+       @include tab {
+        justify-content: center;        
+       }   
+   }
+    
+
     .filters-section{
       padding-top: 0;
       margin-top: 0;
-      margin-bottom: 50px;
+      margin-bottom: 25px;
+        @include tab {
+          margin-bottom: 14px;
+        }
+        @include desk {
+          margin-bottom: 35px;
+        }
     }
-    .filters-bt .bt-item + .bt-item {
-      margin-left: 8px;
-    }
+
+    .bt-item {
+      margin-right: 8px;
+      margin-bottom: 15px;
+       &:nth-child(2) {
+        margin-bottom: 0;
+      }
+    //   @include tab {
+
+    //     .filters-bt .bt-item + .bt-item {
+    //         margin-bottom: 15px;
+    //         margin-left: 8px;
+    //   }
+    // }
+  }
+    // .filters-bt .bt-item + .bt-item {
+    //   margin-bottom: 15px; 
+        
+    //   margin-left: 8px;
+    // }
 
   
   .example-name{
@@ -37,6 +60,10 @@
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
+  // &:nth-child(1) {
+  //   margin-top: -15px;
+  // }
+
 }
 .box-examples {
   // width: 100%;
@@ -111,12 +138,34 @@
   color: #FFFFFF;  
   font-weight: 370;
   background-color: rgba(33, 150, 243, 0.9);
-  padding-top: 63px;
-  padding-right: 24px;
-  padding-bottom: 63px;
-  padding-left: 24px;
+  padding: auto;
+  
   height: 100%;
   transform: translateY(100%);
   transition: transform 300ms linear;
+
+  @include tel {
+    padding-top: 77px;
+    padding-right: 24px;
+    padding-bottom: 77px;
+    padding-left: 24px;
+
+  }
+
+  @include tab {
+    padding-top: 49px;
+    padding-right: 24px;
+    padding-bottom: 49px;
+    padding-left: 24px;
+
+  }
+
+  @include desk {
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+
+  }
 
 }

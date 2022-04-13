@@ -20,35 +20,93 @@
 <body>
     <!-- Верхняя линия -->
     <header class="header line">
-        <!--navigation-->
-    <!-- <div class="container">
-        <nav class="navigation">
-            <div class="container-logo">
-                <a class="logo" href="/">Web<span class="logo-header__color">Studio</span></a>
+        
+    <div class="container">
+        
+            <div class="mob-heder is-hidden"> 
+                    <div class="container-logo">
+                        <a class="logo" href="/">Web<span class="logo-header__color">Studio</span></a>
+                    </div>
+                 <!--navigation-->   
+                 <!-- <nav class="navigation"></nav>
+                    <ul class="nav-list list">
+                        <li class="nav-list__item"><a href="./index.html" class="nav-list__link current">Студия</a></li>
+                        <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link">Портфолио</a></li>
+                        <li class="nav-list__item"><a href="#contacts" class="nav-list__link">Контакты</a></li>
+                    </ul> -->
+                     <!--contacts selection-->
+                    <!-- <ul class="header-contacts list">
+                        <li class="header-contacts__item"><a class="header-contacts__reference" href="mailto:info@devstudio.com" 
+                            >
+                            <svg class="header-contacts__icon" width="16" height="12">
+                                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                            </svg>info@devstudio.com</a>
+                        </li> 
+                        <li class="header-contacts__item"><a class="header-contacts__reference" href="tel:+380961111111"
+                            >
+                            <svg class="header-contacts__icon" width="10" height="16">
+                                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                            </svg>+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </nav> -->
+
+                <!-- mob -->
+
+                
+                    <button type="button" class="menu-open-btn"> 
+
+                    
+                        O
+                    </button>
             </div>
-            <ul class="nav-list list">
-                <li class="nav-list__item"><a href="./index.html" class="nav-list__link current">Студия</a></li>
-                <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link">Портфолио</a></li>
-                <li class="nav-list__item"><a href="#contacts" class="nav-list__link">Контакты</a></li>
-            </ul> -->
-        <!--contacts selection-->
-            <!-- <ul class="header-contacts list">
-                <li class="header-contacts__item"><a class="header-contacts__reference" href="mailto:info@devstudio.com" 
-                    >
-                    <svg class="header-contacts__icon" width="16" height="12">
-                        <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                    </svg>info@devstudio.com</a>
-                </li> 
-                <li class="header-contacts__item"><a class="header-contacts__reference" href="tel:+380961111111"
-                    >
-                    <svg class="header-contacts__icon" width="10" height="16">
-                        <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                    </svg>+38 096 111 11 11</a>
-                </li>
-            </ul>
-        </nav>
+
+       <div class="mob-menu"> 
+          <div class="container">
+                <div class="mob-menu-top">
+                    <button type="button" class="menu-close-btn">X</button>
+
+                    <ul class="mob-menu-list list">
+                        <li class="mob-menu-list__item"><a href="./index.html" class="mob-menu-list__link">Студия</a></li>
+                        <li class="mob-menu-list__item"><a href="./portfolio.html" class="mob-menu-list__link">Портфолио</a></li>
+                        <li class="mob-menu-list__item"><a href="#contacts" class="mob-menu-list__link">Контакты</a></li>
+                        </ul>
+                </div>
+                <div class="mob-menu-bottom">
+                    <div class="mob-contacts">
+                        <ul class="mob-contacts list">
+                            <li class="mob-contacts__item"><a class="mob-contacts__tel" href="tel:+380961111111"
+                                >+38 096 111 11 11</a>
+                            </li>
+                            <li class="mail-contacts__item"><a class="mob-contacts__mail" href="mailto:info@devstudio.com" 
+                                >info@devstudio.com</a>
+                            </li> 
+                            
+                        </ul>
+                    </div>
+
+
+                    <ul class="mob-soc-list list">
+                        <li class="mob-soc-list__item">
+                            <a href="" class="mob-soc-list__link">Instagram</a>
+                        </li>
+                        <li class="mob-soc-list-item">
+                            <a href="" class="mob-soc-list__link">Twitter</a>
+                        </li>
+                        <li class="mob-soc-list__item">
+                            <a href="" class="mob-soc-list__link">Facebook</a>
+                        </li>
+                        <li class="mob-soc-list__item">
+                            <a href="" class="mob-soc-list__link">Linkedin</a>
+                        </li>
+                    </ul> 
+                </div> 
+           </div>      
+       </div>            
+
+
     </div>    
-     </header> -->
+     </header>
     <main>
         <!--Шапка-->
         <section class="section hero overlay cap">
@@ -393,7 +451,7 @@
             </div>
         </div>
     </footer> -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="window-close " data-modal-close>
                 <svg class="icon icon-close-black">
@@ -470,12 +528,13 @@
             </form>
         </div>
        
-    </div>
+    </div> -->
 
 
     
 
  <script src="./js/modal.js"></script>
+ <script src="./js/menu.js"></script>
 </body>
 
 </html>

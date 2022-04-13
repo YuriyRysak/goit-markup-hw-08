@@ -194,7 +194,7 @@ header {
 }
 
 .nav-list {
-  display: flex;
+  display: none;
   margin-left: 93px;
 }
 
@@ -228,7 +228,7 @@ header {
 
 /* contacts selection */
 .header-contacts {
-  display: flex;
+  display: none;
   margin-left: auto;
 }
 
@@ -291,6 +291,117 @@ header {
   border-radius: 2px;
   left: 0;
   bottom: -1px;
+}
+
+/* mob-menu */
+.mob-heder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.menu-open-btn, .mob-menu-close {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.mob-menu_icon {
+  fill: currentColor;
+}
+
+.mob-menu {
+  position: fixed;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vw;
+  top: 0;
+  left: 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.mob-menu .container-mob-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-close-btn {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-left: auto;
+}
+
+.mob-list__item:not(:last-child),
+.mob-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mail-contacts__item {
+  margin-bottom: 64px;
+}
+
+.mob-list__link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+}
+
+.mob-contacts__tel {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  text-decoration: none;
+}
+
+.mob-contacts__mail {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+}
+
+.mob-soc-list {
+  display: flex;
+}
+
+.mob-soc-list__link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  text-decoration: none;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-soc-list__link :not(:last-child) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .hero {

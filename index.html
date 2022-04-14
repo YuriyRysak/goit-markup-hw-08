@@ -21,20 +21,25 @@
     <!-- Верхняя линия -->
     <header class="header line">
         <div class="page-header">
-                <div class="container">
-                    <nav class="nav">                   
-                        <a class="logo" href="/">Web<span class="logo-header__color">Studio</span></a>
-                        <button type="button">
-                            <svg class="menu-open-btn" width="24" height="16">
-                                <use href="./SVG/icomoon/symbol-defs.svg#icon-close_24px"></use>
-                                <use href="./SVG/icomoon/symbol-defs.svg#icon-menu_24px"></use>
-    
-                            </svg> 
-                          
-                            
-                        </button>
-                    </nav>
-                </div>
+            <div class="container">
+                <nav class="nav">                   
+                    <a class="logo" href="/">Web<span class="logo-header__color">Studio</span></a>
+                    <button type="button" class="menu-btn"
+                        aria-expanded="false"
+                        aria-controls="menu-container"
+                        data-menu-button>
+                        <svg  width="40" height="40" aria-label="Переключатель мобильного меню">
+
+                            <use class="icon-cross"href="./SVG/icomoon/symbol-defs.svg#icon-close_24px"></use>
+                            <use class="icon-menu" href="./SVG/icomoon/symbol-defs.svg#icon-menu_24px"></use>
+                        </svg>                                          
+                    </button>
+                    <div class="menu-container" id="menu-container" data-menu>
+                        контент меню
+
+                    </div>
+                </nav>
+            </div>
         </div>        
                  <!--navigation-->   
                  <!-- <nav class="navigation">
@@ -65,7 +70,7 @@
                 
                     
 
-       <!-- <div class="mob-menu"> 
+       <!-- <div class="mob-menu is-hidden" > 
           <div class="container">
                 <div class="mob-menu-top">
                     <button type="button" class="menu-close-btn">X</button>
@@ -536,7 +541,7 @@
 
 
     
-
+ <script src="./js/mob-menu.js"></script>
  <script src="./js/modal.js"></script>
  
  <script src="./js/mobile-menu.js"></script>

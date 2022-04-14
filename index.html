@@ -20,15 +20,24 @@
 <body>
     <!-- Верхняя линия -->
     <header class="header line">
-        
-    <div class="container">
-        
-            <div class="mob-heder is-hidden"> 
-                    <div class="container-logo">
+        <div class="page-header">
+                <div class="container">
+                    <nav class="nav">                   
                         <a class="logo" href="/">Web<span class="logo-header__color">Studio</span></a>
-                    </div>
+                        <button type="button">
+                            <svg class="menu-open-btn" width="24" height="16">
+                                <use href="./SVG/icomoon/symbol-defs.svg#icon-close_24px"></use>
+                                <use href="./SVG/icomoon/symbol-defs.svg#icon-menu_24px"></use>
+    
+                            </svg> 
+                          
+                            
+                        </button>
+                    </nav>
+                </div>
+        </div>        
                  <!--navigation-->   
-                 <!-- <nav class="navigation"></nav>
+                 <!-- <nav class="navigation">
                     <ul class="nav-list list">
                         <li class="nav-list__item"><a href="./index.html" class="nav-list__link current">Студия</a></li>
                         <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link">Портфолио</a></li>
@@ -54,14 +63,9 @@
                 <!-- mob -->
 
                 
-                    <button type="button" class="menu-open-btn"> 
-
                     
-                        O
-                    </button>
-            </div>
 
-       <div class="mob-menu"> 
+       <!-- <div class="mob-menu"> 
           <div class="container">
                 <div class="mob-menu-top">
                     <button type="button" class="menu-close-btn">X</button>
@@ -103,23 +107,23 @@
                 </div> 
            </div>      
        </div>            
+       
 
-
-    </div>    
+    </div>     -->
      </header>
     <main>
         <!--Шапка-->
-        <section class="section hero overlay cap">
+        <!-- <section class="section hero overlay cap">
             <div class="container hero-container">
                 <h1 class="hero-container__decision">Эффективные решения<br>для вашего бизнеса</h1>
                 <button type="button" class="button primary" data-modal-open>Заказать услугу</button>
             </div>
             
-        </section>
+        </section> -->
              
         <!--Особенности-->
 
-        <section class="section section-exception innsays">
+        <!-- <section class="section section-exception innsays">
             <div class="container">
                 <ul class="exception list">
                     <li class="list-item icon-anten">
@@ -148,11 +152,11 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         
         <!--Чем мы занимаемся-->
         
-        <section class="section-cooperate ">
+        <!-- <section class="section-cooperate ">
             <div class="container">
                 <h2 class="team">Чем мы занимаемся</h2>
                 <ul class="cooperate list">
@@ -176,11 +180,11 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         
         <!-- Наша команда -->
         
-        <section class="section feature-team personnel">
+        <!-- <section class="section feature-team personnel">
             <div class="container ">
                 <h2 class="team">Наша команда</h2>
                 <ul class="feature team-text list">
@@ -328,9 +332,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- Постоянные клиенты -->
-        <section class="section section-clients clients">
+        <!-- <section class="section section-clients clients">
             <div class="container">
                 <div class="regular-clients"><h2 class="team">Постоянные клиенты</h2>
                     <ul class="name-client list">
@@ -375,7 +379,7 @@
 
             </div>
             
-        </section>
+        </section> -->
         
     </main>
     <!-- Подвал -->
@@ -534,7 +538,8 @@
     
 
  <script src="./js/modal.js"></script>
- <script src="./js/menu.js"></script>
+ 
+ <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

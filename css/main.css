@@ -210,6 +210,10 @@ button {
   background-color: transparent;
 }
 
+.menu-btn:hover, .menu-btn:focus {
+  fill: var(--accent-color);
+}
+
 .menu-btn .icon-cross {
   display: none;
 }
@@ -224,7 +228,6 @@ button {
 
 /* mob-menu */
 .menu-container {
-  display: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -1138,6 +1141,12 @@ av-list {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) {

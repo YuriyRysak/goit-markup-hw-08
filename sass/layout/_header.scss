@@ -24,6 +24,8 @@ header {
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
+
+     
  
  
   }
@@ -34,24 +36,42 @@ header {
     padding: 0;
     border: none;
     background-color: transparent;
+      &:hover,
+      &:focus{
+      fill: var(--accent-color);
+    }
+
+    
+      
+    
+
+
     
   }
   
-  .menu-btn .icon-cross{
+  .menu-btn .icon-cross
+  {
     display: none;
   }
 
   .menu-btn.is-open .icon-cross {
     display: block;
+    
+    
   }
-  .menu-btn.is-open .icon-menu {
+  .menu-btn.is-open .icon-menu 
+
+   {
     display: none;
   }
+
+ 
+
  
 
   /* mob-menu */
  .menu-container {
-   display: none;
+   
 
    position: absolute;
    top: 100%;
@@ -67,6 +87,7 @@ header {
        display: block;
      }
 
+     
   // position: absolute;
   // background-color: #FFFFFF;
   // width: 100vw;
@@ -80,6 +101,7 @@ header {
   //   display: flex;
   //   flex-direction: column;
   //   justify-content: space-between;
+        
   // }
 
 }

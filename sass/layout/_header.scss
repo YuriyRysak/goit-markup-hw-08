@@ -41,6 +41,8 @@ header {
     }
     
   }
+
+  
   
   .menu-btn .icon-cross{
     display: none;
@@ -51,29 +53,51 @@ header {
   }
   .menu-btn.is-open .icon-menu {
     display: none;
+     & .logo {
+       display: none;
+
+     }
   }
  
 
   /* mob-menu */
- .menu-container { 
-
+ .menu-container{   
    
-
    background-color: var(--top-line-bg);
-   padding: 40px;
-
   
+   width: 100vw;
+   outline: 1px solid green;
+ 
+     @media screen and (min-width: 480px) {
+     width: 480px;
+      padding: 48px;
+    margin-left: auto;
+    margin-right: auto;
+     
+     
    
-  //  font-size: 20px;
+   
+     
 
     
+
+       
+     }
+
+
+    
+      
 
      @media screen and (max-width: 767px){
        display: none;
         position: absolute;
         top: 100%;
-        left: 0;
-        width: 100%;
+        
+        // left: 0;
+       
+        // width: 100vw;
+        
+       
 
         &.is-open {
           display: block;

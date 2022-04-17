@@ -98,17 +98,31 @@
                 
                     
 
-       <div class="mob-menu is-hidden" > 
-          <div class="container">
-                <div class="mob-menu-top">
-                    <button type="button" class="menu-close-btn">X</button>
-
-                    <ul class="mob-menu-list list">
-                        <li class="mob-menu-list__item"><a href="./index.html" class="mob-menu-list__link">Студия</a></li>
-                        <li class="mob-menu-list__item"><a href="./portfolio.html" class="mob-menu-list__link">Портфолио</a></li>
-                        <li class="mob-menu-list__item"><a href="#contacts" class="mob-menu-list__link">Контакты</a></li>
-                        </ul>
-                </div>
+       <div class="menu" >
+            <!-- <a class="logo" href="/">Web<span class="logo-header__color">Studio</span></a> -->
+            <button type="button" class="menu-open-btn" data-menu-open>
+                <svg width="40" height="40">
+                 <use class="icon-menu" href="./SVG/icomoon/symbol-defs.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+            <button type="button" class="menu-close-btn" data-menu-close>
+                <svg width="40" height="40">
+                    <use class="icon-cross" href="./SVG/icomoon/symbol-defs.svg#icon-close_40px"></use>
+                </svg>
+            </button>
+            <div class="mob-menu-top">  
+                
+                <ul class="mob-menu-list list">
+                    <li class="mob-menu-list__item"><a href="./index.html" class="mob-menu-list__link">Студия</a></li>
+                    <li class="mob-menu-list__item"><a href="./portfolio.html" class="mob-menu-list__link">Портфолио</a></li>
+                    <li class="mob-menu-list__item"><a href="#contacts" class="mob-menu-list__link">Контакты</a></li>
+                </ul>              
+                
+                    
+            </div>
                 <div class="mob-menu-bottom">
                     <div class="mob-contacts">
                         <ul class="mob-contacts list">
@@ -138,21 +152,22 @@
                         </li>
                     </ul> 
                 </div> 
-           </div>      
-       </div>           
+           </div> 
+        </div>
+                 
        
 
         
      </header>
     <main>
         <!--Шапка-->
-        <!-- <section class="section hero overlay cap">
+        <section class="section hero overlay cap">
             <div class="container hero-container">
                 <h1 class="hero-container__decision">Эффективные решения<br>для вашего бизнеса</h1>
                 <button type="button" class="button primary" data-modal-open>Заказать услугу</button>
             </div>
             
-        </section> -->
+        </section>
              
         <!--Особенности-->
 
@@ -570,7 +585,7 @@
 
     
  <script src="./js/menu.js"></script>
- 
+
  <script src="./js/modal.js"></script>
  
  <script src="./js/mobile-menu.js"></script>

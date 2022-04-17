@@ -421,7 +421,8 @@ av-list {
 
 .header-contacts__reference:hover,
 .header-contacts__reference:focus,
-.contacts-list__link:hover, .contacts-list__link:focus,
+.contacts-list__link:hover,
+.contacts-list__link:focus,
 .contacts-list__link--address:hover,
 .contacts-list__link--address:focus {
   color: var(--accent-color);

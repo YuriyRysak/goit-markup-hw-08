@@ -115,13 +115,18 @@
   }    
  }
  
+ .container-logo {
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+ }
 
  .menu-open-btn, .menu-close-btn {
-     width: 40px;
-     height: 40px;
-     display: block;
-   margin-left: auto;
-   margin-bottom: 30px;
+      display: inline-flex;
+      margin: 0;
+      padding: 0;
+      border: none;
+      background-color: transparent;
 
  }
 

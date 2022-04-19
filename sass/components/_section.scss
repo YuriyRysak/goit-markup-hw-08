@@ -2,7 +2,7 @@
     padding-top: 118px;
     padding-bottom: 118px;
     @media  screen and (min-width: 1200px) {
-      padding-top: 200px;
+    padding-top: 200px;
     padding-bottom: 200px;
     }
   
@@ -12,6 +12,8 @@
     background-color: var(--top-line-bg);
     padding-top: 60px;
     padding-bottom: 60px;
+     
+   
       @include desk {
         padding-top: 94px;
         padding-bottom: 94px;

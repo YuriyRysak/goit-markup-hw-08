@@ -2,6 +2,20 @@
     background-color:var(--footer-bg-color) ;
   }
 
+  .footer-container {
+    @media screen and (max-width: 1199px) {
+      
+      text-align: center;
+      justify-content: space-around;
+      align-items: baseline
+    
+    }
+    @include tab {
+      display: flex;
+    }
+    
+  }
+
   .contacts-list__link {
     color: var(--address-text-color) ;  
     font-family: Roboto;
@@ -22,8 +36,17 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .footer-contacts {
-   width: 231px;
-   margin-right: 70px;
+  
+   
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 60px;
+    
+    }
+    //  width: 231px;
+    //  margin-right: 70px;
+
+  
+   
   }
   .contacts-list__page {
     margin-bottom: 9px;

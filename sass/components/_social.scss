@@ -1,8 +1,9 @@
-.footer-container{
-    display: flex;
-  }
+
   .social  {
-   width: 206px;
+    @include desk {
+    width: 206px;
+    }
+   
 
     &-text { 
       font-family: Roboto;
@@ -13,7 +14,13 @@
       text-transform: uppercase;
       color: var(--top-line-bg);
       margin-bottom: 20px;
-      padding-top: 14px;
+
+       @include desk {
+         padding-top: 14px;
+       }
+
+      
+      
     }
   
   }
@@ -47,6 +54,8 @@
     &-item +&-item {
       margin-left: 10px;
     }
+
+    margin-bottom: 60px;
    }
      
   

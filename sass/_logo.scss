@@ -2,13 +2,17 @@
   color:var(--accent-color);
   font-family:Raleway,sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height:1.67;
   text-decoration: none;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  @include desk {
+  font-size: 26px;
+  line-height: 1.2;
+  }
   &:hover,&:focus  {
     color:var(--primary-text-color);
     

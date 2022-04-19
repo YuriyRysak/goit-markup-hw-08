@@ -1,5 +1,15 @@
 .footer {
     background-color:var(--footer-bg-color) ;
+    .footer-desk {
+      @include desk {
+        display: flex;
+        justify-content: space-between;
+
+      }
+
+      
+    }
+   
   }
 
   .footer-container {
@@ -43,7 +53,8 @@
     
     }
     //  width: 231px;
-    //  margin-right: 70px;
+    @include desk {
+     margin-right: 70px;}
 
   
    

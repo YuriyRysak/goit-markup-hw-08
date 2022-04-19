@@ -725,6 +725,13 @@ button {
   background-color: var(--footer-bg-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .footer .footer-desk {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .footer-container {
     text-align: center;
@@ -763,6 +770,12 @@ button {
 @media screen and (max-width: 1199px) {
   .footer-contacts {
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    margin-right: 70px;
   }
 }
 

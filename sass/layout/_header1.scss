@@ -163,6 +163,10 @@
       padding: 0;
       border: none;
       background-color: transparent;
+      &:hover,
+      &:focus {
+        fill: var(--accent-color);
+      }
       @media screen and (min-width: 767px) 
       {display:none; 
         
@@ -171,7 +175,10 @@
  }
 
  .menu-close-btn {
-     margin-bottom: 30px;
+   position: absolute;
+    right: 15px;
+    top: 10px;
+     
  }
 
  .mob-menu {
@@ -183,6 +190,7 @@
      left: 0;
      padding-top: 48px;
      padding-bottom: 48px;
+     padding-left: 40px;
      .container {
          height: 100%;
          display: flex;
@@ -194,6 +202,7 @@
  
  .mob-contacts {
      margin-bottom: 64px;
+     
 
  }
 
@@ -204,12 +213,19 @@
  }
 
  .mob-menu-list__link {
+    text-decoration: none;
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
     letter-spacing: 0.02em;
     
     color: #212121;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);}
+      
+
+    
 
  }
  .mob-contacts__tel{
@@ -217,6 +233,7 @@
     font-size: 34px;
     line-height: 40px;
     letter-spacing: 0.02em;
+    text-decoration: none;
     
     color: #2196F3;
  }
@@ -225,12 +242,19 @@
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.02em;
+    text-decoration: none;
     
     color: #757575;
 
  }
 
+ .mob-soc-list {
+   display: flex;
+
+ }
+
  .mob-soc-list__link {
+   text-decoration: none;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
@@ -242,9 +266,12 @@
  }
 
  .mob-soc-list__item {
+    
      &:not(:last-child) {
+       
      padding-right: 10px;
      margin-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
  }
     

@@ -354,6 +354,10 @@ button {
   background-color: transparent;
 }
 
+.menu-open-btn:hover, .menu-open-btn:focus, .menu-close-btn:hover, .menu-close-btn:focus {
+  fill: var(--accent-color);
+}
+
 @media screen and (min-width: 767px) {
   .menu-open-btn, .menu-close-btn {
     display: none;
@@ -361,7 +365,9 @@ button {
 }
 
 .menu-close-btn {
-  margin-bottom: 30px;
+  position: absolute;
+  right: 15px;
+  top: 10px;
 }
 
 .mob-menu {
@@ -373,6 +379,7 @@ button {
   left: 0;
   padding-top: 48px;
   padding-bottom: 48px;
+  padding-left: 40px;
 }
 
 .mob-menu .container {
@@ -391,6 +398,7 @@ button {
 }
 
 .mob-menu-list__link {
+  text-decoration: none;
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
@@ -398,11 +406,16 @@ button {
   color: #212121;
 }
 
+.mob-menu-list__link:hover, .mob-menu-list__link:focus {
+  color: var(--accent-color);
+}
+
 .mob-contacts__tel {
   font-weight: 500;
   font-size: 34px;
   line-height: 40px;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: #2196F3;
 }
 
@@ -411,10 +424,16 @@ button {
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: #757575;
 }
 
+.mob-soc-list {
+  display: flex;
+}
+
 .mob-soc-list__link {
+  text-decoration: none;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
@@ -425,6 +444,7 @@ button {
 .mob-soc-list__item:not(:last-child) {
   padding-right: 10px;
   margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .hero {

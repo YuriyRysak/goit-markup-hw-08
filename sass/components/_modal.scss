@@ -29,8 +29,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 450px;
-    min-height: 581px;
+
+    width: 100%;
+    min-height: 609px;
     background-color:var(--top-line-bg);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -42,7 +43,9 @@
      width: 450px;    
     }
     @media screen and (min-width: 1200px) {
-      width: 528px;    
+      width: 528px;
+      min-height: 581px;
+
     }
 
       &-title {
@@ -50,11 +53,14 @@
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
-        line-height: 1.15;
+        line-height: 1.5;
         text-align: center;
         letter-spacing: 0.03em;
         margin-bottom: 15px;
         color: #212121;
+        @include desk {
+          line-height: 1.15;
+        }
       }
       &-input {
         width: 100%;
@@ -93,12 +99,13 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
-        line-height: 1.67;
+        font-size: 14px;
+        line-height: 1.71;
         letter-spacing: 0.01em;
         color: rgba(117, 117, 117, 0.5);
         resize: none;
         outline: none;
+        
       }
   } 
   
@@ -167,14 +174,19 @@
 font-family: Roboto;
 font-style: normal;
 font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
+font-size: 12px;
+line-height: 1.67;
 letter-spacing: 0.03em;
 display: flex;
 justify-content: center;
 align-items: center;
 margin-bottom: 30px;
 color:var(--secondary-text-color);
+ @include desk {
+  font-size: 14px;
+  line-height: 1.71;
+
+ }
 
 }
 .modal-check-text .vector {
@@ -236,13 +248,19 @@ border-color: transparent;
 font-family: Roboto;
 font-style: normal;
 font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
+font-size: 12px;
+line-height: 1.67;
 letter-spacing: 0.03em;
 text-decoration-line: underline;
 margin-left: 5px;
 
 color:var(--accent-color); 
+
+ @include desk {
+  font-size: 14px;
+  line-height: 1.71;
+
+ }
 }
 
 

@@ -53,14 +53,15 @@
                 </li>
             </ul>
         </nav>
-        <button type="button" class="menu-open-btn" data-menu-open>
+        <!-- menu -->
+        <!-- <button type="button" class="menu-open-btn" data-menu-open>
             <svg width="40" height="40">
                 <use class="icon-menu" href="./SVG/icomoon/symbol-defs.svg#icon-menu_40px"></use>
             </svg>
         </button>
     </div> 
                  
-                   <!-- menu -->
+                  
         <div class="mob-menu is-hidden" data-menu>
             <div class="container">
                 <div class="mob-menu-top">
@@ -100,7 +101,7 @@
                     </ul>
                 </div>  
             </div>           
-        </div> 
+        </div>  -->
 
      </header>
 
@@ -182,7 +183,23 @@
                 <h2 class="team">Наша команда</h2>
                 <ul class="feature team-text list">
                     <li class="name-list-icon">
-                        <img src="./images/img1.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+                        <picture>
+                          <source  
+                            srcset="./images/img-d-id-1x.jpg 1x,
+                                    ./images/img-d-id-2x.jpg 2x,
+                            "                            
+                            media="(min-width: 1200px)"/>
+                          <source
+                            srcset="./images/img-t-id-1x.jpg 1x,  
+                                    ./images/img-t-id-2x.jpg 2x,
+                            " media="(min-width: 768px)"/>
+                          <source
+                            srcset="./images/img-m-id-1x.jpg 1x,  
+                                    ./images/img-m-id-2x.jpg 2x,
+                            " media="(min-width: 320px)"/>
+                            <img    
+                            src="./images/img-id.jpg" alt="Игорь Демьяненко"/>
+                        </picture>
                         <div class="name-list"><h3 class="name">Игорь Демьяненко</h3>
                           <p class="occupation">Product Designer</p>
                         <ul class="name-occupation list">
@@ -219,7 +236,19 @@
                     
                     </li>
                     <li class="name-list-icon">
-                        <img src="./images/img2.jpg" alt="Ольга Репина" width="270" height="260" />
+                        <picture>
+                            <source srcset="./images/img-d-ol-1x.jpg 1x,
+                                            ./images/img-d-ol-2x.jpg 2x,
+                                    " media="(min-width: 1200px)"/>
+                            <source srcset="./images/img-t-ol-1x.jpg 1x,  
+                                            ./images/img-t-ol-2x.jpg 2x,
+                                    " media="(min-width: 768px)"/>
+                            <source srcset="./images/img-m-ol-1x.jpg 1x,
+                                            ./images/img-m-ol-2x.jpg 2x,        
+                           
+                                    " media="(min-width: 320px)"/>
+                            <img src="./images/img-ol.jpg" alt="Ольга Репина"/>
+                         </picture>
                         <div class="name-list"><h3 class="name">Ольга Репина</h3>
                          <p class="occupation">Frontend Developer</p>
                         <ul class="name-occupation list">
@@ -254,7 +283,18 @@
                         </div>
                     </li>
                     <li class="name-list-icon">
-                        <img src="./images/img3.jpg" alt="Николай Тарасов" width="270" height="260" />
+                        <picture>
+                            <source srcset="./images/img-d-nt-1x.jpg 1x,
+                                            ./images/img-d-nt-2x.jpg 2x,
+                                    " media="(min-width: 1200px)" />
+                            <source srcset="./images/img-t-nt-1x.jpg 1x,  
+                                            ./images/img-t-nt-2x.jpg 2x,
+                                    " media="(min-width: 768px)" />
+                            <source srcset="./images/img-m-nt-1x.jpg 1x,  
+                                            ./images/img-m-nt-2x.jpg 2x,
+                                    " media="(min-width: 320px)" />
+                            <img src="./images/img-nt.jpg" alt="Николай Тарасов" />
+                        </picture>
                         <div class="name-list"><h3 class="name">Николай Тарасов</h3>
                           <p class="occupation">Marketing</p>
                         <ul class="name-occupation list">
@@ -289,7 +329,18 @@
                         </div>
                     </li>
                     <li class="name-list-icon">
-                        <img src="./images/img4.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+                        <picture>
+                            <source srcset="./images/img-d-me-1x.jpg 1x,
+                                            ./images/img-d-me-2x.jpg 2x,
+                                    " media="(min-width: 1200px)" />
+                            <source srcset="./images/img-t-me-1x.jpg 1x,  
+                                            ./images/img-t-me-2x.jpg 2x,
+                                    " media="(min-width: 768px)" />
+                            <source srcset="./images/img-m-me-1x.jpg 1x,  
+                                            ./images/img-m-me-2x.jpg 2x,
+                                    " media="(min-width: 320px)" />
+                            <img src="./images/img-me.jpg" alt="Михаил Ермаков" />
+                        </picture>
                         <div class="name-list"><h3 class="name">Михаил Ермаков</h3>
                           <p class="occupation">UI Designer</p>
                         <ul class="name-occupation list">

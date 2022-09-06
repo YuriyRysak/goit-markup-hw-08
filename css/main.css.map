@@ -11,7 +11,7 @@
         "../sass/components/_section.scss",
         "../sass/utils/_hidden.scss",
         "../sass/_logo.scss",
-        "../sass/layout/_header1.scss",
+        "../sass/layout/_header.scss",
         "../sass/layout/_hero.scss",
         "../sass/layout/_exception.scss",
         "../sass/layout/_cooperate.scss",

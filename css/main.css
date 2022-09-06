@@ -389,6 +389,22 @@ button {
   justify-content: space-between;
 }
 
+.mob-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.mob-menu.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+@media screen and (min-width: 767px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
 .mob-contacts {
   margin-bottom: 64px;
 }

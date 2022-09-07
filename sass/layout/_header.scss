@@ -1,6 +1,7 @@
 .header {
     border: 1px solid transparent;
     border-bottom-color: #ECECEC;
+   
 
   }
 .line {
@@ -65,21 +66,21 @@
     }
     .header-contacts__reference {
     display: flex;
-    align-items:center;
-    
-   
-     
+    align-items:center;        
     color: var(--secondary-text-color);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+    @include desk {
+      font-size: 14px;
     
-      
+
+    }        
     }
 
     
@@ -155,6 +156,12 @@
    display: flex;
    justify-content: space-between;
    text-align: center;
+   @media screen and (max-width: 767px) 
+   {padding-top: 16px;
+    padding-bottom: 16px; 
+     
+   }
+   
  }
 
  .menu-open-btn, .menu-close-btn {
@@ -191,6 +198,7 @@
      padding-top: 48px;
      padding-bottom: 48px;
      padding-left: 40px;
+     z-index: 1;
      .container {
          height: 100%;
          display: flex;

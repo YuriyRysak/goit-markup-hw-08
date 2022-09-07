@@ -30,6 +30,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 img {
+  display: block;
   max-width: 100%;
   width: 100%;
   height: auto;
@@ -274,13 +275,19 @@ button {
   align-items: center;
   color: var(--secondary-text-color);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts__reference {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -346,6 +353,13 @@ button {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .container-logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
 .menu-open-btn, .menu-close-btn {
   display: inline-flex;
   margin: 0;
@@ -380,6 +394,7 @@ button {
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+  z-index: 1;
 }
 
 .mob-menu .container {
@@ -655,7 +670,7 @@ button {
 .team {
   color: var(--primary-text-color);
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
@@ -666,6 +681,7 @@ button {
 @media screen and (min-width: 1200px) {
   .team {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -1268,6 +1284,7 @@ button {
   left: 0;
   width: 100vw;
   height: 100vh;
+  background-color: rgba(0, 0, 0, 0.25);
   opacity: 1;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
